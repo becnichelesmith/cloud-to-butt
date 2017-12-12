@@ -6,11 +6,6 @@ function walk(node)
 	// http://is.gd/mwZp7E
 	
 	var child, next;
-	
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
-		return;
-	}
 
 	switch ( node.nodeType )  
 	{
@@ -36,12 +31,27 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\btrump\b/g, "cheeto man");
+	v = v.replace(/\bTrump\b/g, "Cheeto Man");
+	v = v.replace(/\bTRUMP\b/g, "CHEETO MAN");
+	
+        v = v.replace(/\bDonald Trump\b/g, "Cheeto Man");
+        v = v.replace(/\bdonald trump\b/g, "cheeto man");
+	v = v.replace(/\bDONALD TRUMP\b/g, "CHEETO MAN");
+	
+	v = v.replace(/\bDonald J. Trump\b/g, "Cheeto Man");
+        v = v.replace(/\bdonald j. trump\b/g, "cheeto man");
+	v = v.replace(/\bDONALD J. TRUMP\b/g, "CHEETO MAN");
+	
+	v = v.replace(/\bDonald J Trump\b/g, "Cheeto Man");
+        v = v.replace(/\bdonald j trump\b/g, "cheeto man");
+	v = v.replace(/\bDONALD J TRUMP\b/g, "CHEETO MAN");
+	
+	
+
+
+
 	
 	textNode.nodeValue = v;
 }
-
 
