@@ -31,22 +31,25 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = v.replace(/\bDonald John Trump\b/g, "Cheeto Man");
+	
+	v = v.replace(/\bDonald J. Trump\b/g, "Cheeto Man");
+ 	v = v.replace(/\bdonald j. trump\b/g, "cheeto man");
+	v = v.replace(/\bDONALD J. TRUMP\b/g, "CHEETO MAN");
+
+	v = v.replace(/\bDonald J Trump\b/g, "Cheeto Man");
+  	v = v.replace(/\bdonald j trump\b/g, "cheeto man");
+	v = v.replace(/\bDONALD J TRUMP\b/g, "CHEETO MAN");
+
+	v = v.replace(/\bDonald Trump\b/g, "Cheeto Man");
+ 	v = v.replace(/\bdonald trump\b/g, "cheeto man");
+	v = v.replace(/\bDONALD TRUMP\b/g, "CHEETO MAN");
+
 	v = v.replace(/\btrump\b/g, "cheeto man");
 	v = v.replace(/\bTrump\b/g, "Cheeto Man");
 	v = v.replace(/\bTRUMP\b/g, "CHEETO MAN");
-	
-        v = v.replace(/\bDonald Trump\b/g, "Cheeto Man");
-        v = v.replace(/\bdonald trump\b/g, "cheeto man");
-	v = v.replace(/\bDONALD TRUMP\b/g, "CHEETO MAN");
-	
-	v = v.replace(/\bDonald J. Trump\b/g, "Cheeto Man");
-        v = v.replace(/\bdonald j. trump\b/g, "cheeto man");
-	v = v.replace(/\bDONALD J. TRUMP\b/g, "CHEETO MAN");
-	
-	v = v.replace(/\bDonald J Trump\b/g, "Cheeto Man");
-        v = v.replace(/\bdonald j trump\b/g, "cheeto man");
-	v = v.replace(/\bDONALD J TRUMP\b/g, "CHEETO MAN");
-	
+
+
 	
 
 
