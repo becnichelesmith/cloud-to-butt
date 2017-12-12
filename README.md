@@ -1,7 +1,6 @@
 trump-to-cheeto-man
 =============
 
-![](logo.png)
 
 Chrome extension that replaces occurrences of 'trump' with 'cheeto man'
 
